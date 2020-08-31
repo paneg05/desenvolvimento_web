@@ -1,0 +1,56 @@
+body{ 
+	background: #007fc7;
+
+}
+#principal{
+
+	background: #fff;
+	width: 800px;
+	margin: 10px auto;
+	padding: 10px;
+	position: relative;
+}
+
+h1{
+
+
+	/*position: static;  <---  POSICIONAMENTO PADRAO*/
+}
+
+
+p{
+
+	width: 300px;
+}
+
+.relative{
+	border: 1px solid red;
+	position: relative;/* top, right, bottom, left*/
+	top: -20px;
+	left: 80px
+}
+
+.absolute{
+	border: 1px solid red;
+	background: #f2f2f2;
+	position: absolute; /* nao afeta o posicionamento
+	dos demais e leva em conciderçao o valor
+	inicial do conteiner pai desde que n seja static
+	caso contrario levara em consideraçao a margem da pagina*/
+	top: 80px;
+	right: 80px;
+
+
+}
+
+.fixed{
+	border: 1px solid red;
+	background: #f2f2f2;
+	margin: 0px;
+	position: fixed;/*fixa em relaçao a janela n leva 
+	em consideraçao margem da janela*/
+	bottom: 0px;
+	right: 0px;
+
+
+}

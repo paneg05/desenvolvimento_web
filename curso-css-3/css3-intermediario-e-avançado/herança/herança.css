@@ -1,0 +1,46 @@
+/** herança e espcifidade **/ 
+
+
+/*body{
+	color: red;
+	background: gray; os filhos nao herdam 
+	nem border nem background
+	border: 1px solid red;
+}*/
+
+
+
+/**especificidade **/
+
+/**
+p{
+	color: red;
+}
+
+p{
+	color: blue;
+}
+
+
+ vale o seletor que vem por ultimo**/
+
+
+ *{
+ 	color: red;
+ }
+
+ h2{
+ 	color: blue;
+
+ }
+
+ h2.verde{
+ 	color: green;
+ }
+
+ h2#amarelo{ /**id e mais especifico que classe**/
+ 	color: yellow;
+ }
+
+ /** vale o seletor mais especifico em detrimento do mais geral**/
+

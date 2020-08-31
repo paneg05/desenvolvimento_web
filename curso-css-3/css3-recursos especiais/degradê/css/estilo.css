@@ -1,0 +1,13 @@
+#caixa{
+	width: 300px;
+	height: 300px;
+	/*background: url("../imagens/camera.png");*/
+	/*background: linear-gradient(63deg, red, green, yellow);*/
+	background: repeating-radial-gradient(red, green 10%, yellow 10%, blue 15%, white 10%);
+	border-radius: 150px;
+}
+
+#caixa h1{
+	/*background: rgba(255, 255, 255, 0.8);*/
+
+}
