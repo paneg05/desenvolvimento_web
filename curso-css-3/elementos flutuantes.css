@@ -1,0 +1,43 @@
+#principal{
+	border: 5px solid red;
+	background: green;
+
+}
+
+.conteudo{
+	background: blue;
+	border: 1px solid gray;
+	width: 200px;
+	height:200px;
+	margin: 10px;
+	float: left;
+
+}
+
+.conteudo1{
+	background: red;
+	border: 1px solid gray;
+	width: 200px;
+	height:200px;
+	margin: 10px;
+	/*float remove do fluxo normal do documento
+	e tambem n empuram o seu container/div pai
+	para caberem dentro dela*/
+	float: left;
+
+}
+
+.conteudo-zero{
+	background: red;
+	border: 1px solid gray;
+	width: 200px;
+	height:200px;
+	margin: 10px;
+	/*float remove do fluxo normal do documento*/
+	
+
+}
+
+.clear{
+	clear: both;
+}

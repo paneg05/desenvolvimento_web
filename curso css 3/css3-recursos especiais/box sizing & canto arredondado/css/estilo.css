@@ -1,0 +1,37 @@
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 10px;
+	margin: 10px ;
+	border-radius: 50px 150px;
+	-webkit-border-radius: 50px 150px;
+	-moz-border-radius: 50px 150px;
+}
+
+#caixa1{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 50px;
+	/*
+	o padding deixa de acrescer no tamanho final da caixa, utilizar os prefixos
+	para navegadores antigos
+	*/
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#caixa2{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 50px;
+	margin-top: 20px;
+	
+}
+
+.arredondamento{
+	border-radius: 150px;
+}

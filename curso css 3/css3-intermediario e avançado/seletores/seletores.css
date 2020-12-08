@@ -1,0 +1,38 @@
+/**** seletor universal
+
+*{
+	border: 1px solid red;}
+
+ seletor de texto
+h1{
+	color: green;
+}
+
+.verde{
+	color:green;
+}
+
+p.verde{
+	color:green;
+}
+#cabecalho{
+	border: 1px solid red;
+
+
+li>a {      filho direto
+	color: red;
+	text-decoration: none;
+}
+
+p a {
+	 todos os decendentes que estiverem dentro
+	 color: green;}*****/
+
+
+ /** irmao adjacente somente o proximo imediato**/
+h1+p{
+	color: green;
+}
+
+/** irmao geral todos os seguintes**/
+

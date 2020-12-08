@@ -1,0 +1,32 @@
+
+
+/*****dessa maneira  se reconhece uma fonte customizada*****/
+@font-face {
+	font-family: "road rage";
+	src: url("../fontes/fontes_convertidas/RoadRage.woff");
+}
+
+@font-face {
+	font-family: "heart";
+	src: url("../fontes/fontes_convertidas/BringHeart.woff");
+}
+
+@font-face {
+	font-family: "ancient";
+	src: url("../fontes/fontes_convertidas/Ancient-Medium.woff");
+}
+
+h1{
+	font-size: 6em;
+	font-family: "road rage";
+}
+
+h2{
+	font-size: 6em;
+	font-family: "heart";
+}
+
+h3{
+	font-size: 6em;
+	font-family: "ancient";
+}
