@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <title>formularios - bootstrap</title>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- estilo CSS -->   
+    <link rel="stylesheet" media="screen" type="text/css" href="css/estilo.css">
+    <!--estilo impressao CSS-->
+    <link rel="stylesheet" media="print" type="text/css" href="css/estilo-impressao.css">
+
+  </head>
+
+  <body >
+
+
+    <!-- Formulários
+        classe: form-control-<opções>
+        opções: sm, lg
+    -->
+
+    <form>
+      
+      <!-- caixas de texto -->
+      <div class="form-group">
+        <label for="usuario">Usuário</label>
+        <input class="form-control form-control-lg" type="text" id="usuario" placeholder="digite seu usuário" name="">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control" type="email" id="email" placeholder="digite seu email" name="" readonly > <!-- readonly="0" --> 
+      </div>
+
+      <small class="form-text">Email será validado</small>
+
+
+
+
+      <!-- Select -->
+      <div class="form-group">
+        <label for="estados">Estados</label>
+        <select class="form-control" id="estados">
+          <option>Acre</option>
+          <option>Alagoas</option>
+          <option>Amapá</option>
+          <option>...</option>
+        </select>
+      </div>
+
+      <!-- textarea -->
+      <div class="form-group">
+        <label>Messagens</label>
+        <textarea  class="form-control" id="messagens" rows="3"></textarea>
+      </div>
+
+      <!-- file input -->
+      <div class="form-group">
+        <label for="arquivo">Arquivo</label>
+        <input class="form-control-file" type="file" id="arquivo" name="">
+      </div>
+
+      <!-- custom file input -->
+      <div class="custom-file">
+        <input class="custom-file-input" type="file" id="arquivo" name="">
+        <label class="custom-file-label">selecione o arquivo</label>
+      </div>
+      <br><br>
+
+      <!-- range -->
+      <div class="form-group">
+        <label id="range">Satisfação</label>
+        <input class="custom-range" type="range" id="range" min="1" max="5" name="">
+        </div>
+
+        <!-- button -->
+        <input class="btn btn-primary" type="submit" value="salvar" name="">
+
+    </form>
+
+    <br><br>
+
+    <!-- formulário inline -->
+    <form class="form-inline">
+      <input class="form-control mr-2" type="text" placeholder="digite seu usuário" name="">
+      <input class="form-control mr-2" type="password" placeholder="Dogite sua senha" name="">
+      <input class="btn btn-info " type="submit" value="logar" name="">
+    </form>
+    <br><br>
+
+    <!--
+      Validação de formulário
+      classes: is-valid, is-invalid, invalid-feedback
+    -->
+
+    <form>
+      
+      <div class="form-group">
+        <label for="email-usuario">email</label>
+        <input class="form-control is-valid" type="text" id="email-usuario" placeholder="digite e-mail" name="">
+         <div class="valid-feedback">
+          e-mail válido
+        </div>
+        <input class="btn btn-primary" type="submit" value="logar" name="">
+      </div>
+
+      <div class="form-group">
+        <label for="senha-usuario">Senha</label>
+        <input class="form-control is-invalid " type="password" id="senha-usuario" placeholder="digite a senha" name="">
+        <div class="invalid-feedback">
+          senha inválida
+        </div>
+        <br>
+        <input  class="btn btn-primary" type="submit" value="logar" name="">
+      </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
