@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        function exibirArtigo (id, callbackSucesso, callbackErro){
+            //logica: recuperar o id via requisição http
+            if(true){
+                callbackSucesso('funções de callback em js', 'funções de callback são muito utilizadas ...')
+            } else{
+                callbackErro('erro ao recuperar os dados')
+            }
+        }
+
+        var callbackSucesso = function (titulo, descricao){ //tecnica de wraper
+                document.write('<h1>' + titulo + '</h1>')
+                document.write('<hr>')
+                document.write('<p>'+ descricao +'</p>')
+        }
+
+        var callbackErro = function(){//tecnica de wraper
+            document.write('<p><b>erro;</b>'+erro+'</p>')
+        }
+
+        exibirArtigo(1,callbackSucesso ,callbackErro) //deixa o codigo mais enchuto,nao se usa parenteses, caso contrário o interpretador ira executar a função no momento da chamada
+
+
+    </script>
+
+
+</body>
+</html>

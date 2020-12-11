@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //3escopos: global, função e bloco
+
+        var serie = 'friends'//global 
+
+        if(true){
+            var serie2 = 'game of thrones' //var faz uma elevação de escopo da variavel
+
+        }
+
+        document.write(serie2)
+
+        document.write("<br>")
+
+        function x(){
+            var serie3='the walking dead' //não eleva o escopo da variavel por ela estar dentro de uma função
+            document.write(serie+'<br>')
+            document.write(serie2+'<br>')
+            
+        }
+        
+        x()
+        document.write(serie3+'<br>')
+        
+    </script>
+
+</body>
+</html>
