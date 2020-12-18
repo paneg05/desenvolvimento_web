@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var num1=prompt('entre com o primeiro número!')
+        var op=prompt('entre com a operação de forma textual!')
+        var num2=prompt('entre com o segundo número!')
+        var resultado
+        
+        function calculo (){
+            
+            
+
+            num1=parseInt(num1)
+            num2=parseInt(num2)
+
+            if (op=='soma'){
+
+                resultado=num1+num2
+                document.write('o Resultado é '+ (resultado))
+
+            }else if(op=='subtracao'){
+
+                resultado=num1-num2
+                document.write('O resultado é ' + resultado)
+
+            }else{
+
+                document.write('operação inválida! por favor insira um operação de soma ou subtração!')
+
+            }
+        }
+
+        calculo(num1,num2,op,resultado)
+        
+
+    </script>
+
+
+</body>
+</html>

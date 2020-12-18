@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+    /*
+        **************** meses vão de 0-11
+
+    
+        var data = new Date()
+
+        //document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear() )
+        
+        //adicionar/remover dias
+        document.write(data.toDateString())
+        data.setDate(data.getDate()+1)
+        document.write('<hr>')
+        document.write(data.toString())
+        document.write("<hr>")
+        document.write('<br><br><br>')
+
+        //adicionar/remover dias
+        document.write(data.toDateString())
+        data.setMonth(data.getMonth()+1)
+        document.write('<hr>')
+        document.write(data.toString())
+        document.write("<hr>")
+        document.write('<br><br><br>')
+
+        //adicionar/remover anos
+        document.write(data.toDateString())
+        data.setFullYear(data.getFullYear()+1)
+        document.write('<hr>')
+        document.write(data.toString())
+        document.write("<hr>")
+        document.write('<br><br><br>')
+    */
+
+
+    //15/01/2021
+    var data1 = new Date(2021, 0, 15 )
+
+    //23/03/2022
+
+    var data2 = new Date(2022, 02, 23)
+
+    document.write(data1.toString())
+    document.write('<hr>')
+    document.write(data2.toString())
+    document.write('<br><br><br>')
+
+
+
+        //converter para algo que possamos calcular
+    document.write(data1.getTime())
+    document.write('<hr>')
+    document.write(data2.getTime())
+    document.write('<br><br><br>')
+    //recupera os milisegundos passados de 1 de janeiro de 1970 ate a data atual
+
+    //encontrar a quantidade de milisegundos entre data1 e data2
+    var milisegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime())
+    document.write(milisegundosEntreDatas)
+    //Math.abs retorna o valor absoluto de uma variavel, se for negativo ela transforma em positivo
+
+
+    //calcular quantos milisegundos tem em um dia
+    var milisegundosDia = 1*24*60*60*1000
+    document.write('<br>1 dia tem ' + (milisegundosDia) + ' milisegundos')
+    document.write('<br><br><br><hr>')
+    
+    document.write('a diferença entre a data 1 e a data 2 é de ' +Math.ceil(milisegundosEntreDatas/milisegundosDia)+' dias')
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

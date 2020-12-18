@@ -1,153 +1,60 @@
 body,html{
     margin: 0;
+    max-height: 100%;
     height: 100%; /*aumenta o tamanho da tela até o tamanho total do monitor*/
-}
-.container{
-    height: 100%;
-    background-color: blue;
 }
 
 .cabecalho{
-    top: 0px;
-    left: 0px;
-    right: 0px;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1;
-    opacity: 0.7;
 }
-.caixa1{
-    position: relative;
-    width: 100%;
+.container{
+    
+    
+    
+}
+
+#capa{
+    background-image: url(../imagem/caixa4.jpg);
     height: 100%;
-    
-    opacity: 0.7;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /*aki q a magica acontece, a imagem fica fixa*/
-    background-attachment: fixed;
-    
-}
-.clear{
-    clear: both;
-}
-
-.caixa1{
-    background-image: url(../imagem/caixa4.jpg) ;
-    
-}
-
-.conteudo-titulo{
-    position: absolute;
-    left: 0%;
-    top: 40%;
-    width: 50%;
-    width: 100%;
     text-align: center;
     
 }
 
-.conteudo-titulo div.titulo{
-    color: aliceblue;
-    width: 50%;
-    margin:0 auto 0 auto;
-    
-    padding: 18px;
+#capa1{
+    height: 100%;
+}
+
+.letreiro_capa{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
    
-   
+}
+.letreiro_capa hr{
+    border-color: seashell;
+}
+.letreiro_capa p{
+    font-size: 2em;
 }
 
-.conteudo-titulo div.titulo .nome{
-    border-bottom: 1px solid #ffffff;
-    font-size: 100px;
-}
-
-.conteudo-titulo div.titulo .complemento{
-    font-size: 25px;
-}
-
-.container-biografia{
+#quem_sou{
     height: 100%;
-    width: 100%;
+    text-align: center;
 }
 
-.item_biografia{
-    width: 15%;
-    
-}
-
-/** foto biografia **/
-
-.foto-biografia{
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.foto{
-    border-radius: 50%;
-    height: 35%;
-    width: 20%;
-    box-shadow:  0 0 1em blue;
-}
-
-/** fim foto biografia **/
-
-/** inicio sobre mim biografia **/
-.quemsou{
-    margin-left: 10%;
-    max-height: 100%;
-}
-
-.quemsou h2{
-    border-bottom: 1px solid #92DBEF;
-    color: #34d2faec;
-}
-
-/** fim sobre mim biografia **/
-
-/** inicio formação biografia **/
-.formacao{
-    margin-right:10% ;
-}
-
-.formacao h2{
-    border-bottom: 1px solid #64f041;
-    color: rgb(93, 253, 71);
+.biografia_foto{
+    border-radius: 90px;
+    box-shadow: 0px 0px 1em rgba(77, 198, 235, 0.795);
 }
 
 
-/**fim formaçao biografia **/
 
-.container2{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(184, 199, 245, 0.452);
-    
-}
 
-.containerxp{
-    
-    height: 60%;
-    width: 60%;
-}
 
-.containerxp table{
-    height: 100%;
-    width: 100%;
-}
 
-.containerxp table td{
-    border-bottom: 2px dotted rgba(247, 121, 4, 0.377);
-    text-align:center ;
-}
-
-.containerxp table th{
-    text-align:center ;
-    vertical-align: bottom;
-    
-    
-}
 
 
 
