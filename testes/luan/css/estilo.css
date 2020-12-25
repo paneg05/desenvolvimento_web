@@ -4,6 +4,8 @@ body,html{
     height: 100%; /*aumenta o tamanho da tela até o tamanho total do monitor*/
 }
 
+/* nav bar */
+
 .cabecalho{
     position: fixed;
     top: 0;
@@ -11,14 +13,15 @@ body,html{
     width: 100%;
     z-index: 1;
 }
-.container{
-    
-    
-    
+.navbar{
+    background: rgba(0, 0, 0, 0.555);
 }
+
+/* nav bar*/
 
 #capa{
     background-image: url(../imagem/caixa4.jpg);
+    background-attachment: fixed;
     height: 100%;
     text-align: center;
     
@@ -40,6 +43,9 @@ body,html{
     font-size: 2em;
 }
 
+/* seção biografia */
+/* seção biografia */
+
 #quem_sou{
     height: 100%;
     text-align: center;
@@ -50,9 +56,48 @@ body,html{
     box-shadow: 0px 0px 1em rgba(77, 198, 235, 0.795);
 }
 
+.biografia_habilidades ul li{
+    
+    padding: 5px;
+    font-size: 1.1em;
+    list-style: none;
+}
 
 
+/* seção biografia */
+/* seção biografia */
 
+
+/* seção trabalhos*/
+/* seção trabalhos*/
+
+#trabalhos{
+    height: 100%;
+    background-color: rgba(124, 162, 187, 0.521);
+    
+}
+
+.habilidades{
+    text-align: center;   
+}
+.habilidades ul li{
+    list-style: none;
+    
+}
+.habilidades ul{
+    padding: 0px;
+}
+
+
+.tabela_trabalhos tr td{
+     padding: 15px;
+     border-bottom: 1px dotted rgb(6, 58, 100);
+
+}
+
+.a{
+    border: 1px solid red;
+}
 
 
 
