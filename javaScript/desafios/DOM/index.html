@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .semfoco{
+            background-color: '';
+        }
+        .foco{
+            background-color: yellow ;
+        }
+
+        .vermelho{
+            background-color: red;
+        }
+
+        .verde{
+            background-color: green;
+        }
+
+    </style>
+
+    <script>
+
+        function modificaEstiloFoco(){
+            document.getElementById('entrada').className = 'foco'
+        }
+
+        function modificaEstiloSemFoco() {
+            document.getElementById('entrada').className = 'semfoco'
+        }
+
+        function caracter_3() {
+            var caracter = document.getElementById('entrada').value
+            var caracter1 = caracter.length
+            console.log(caracter1)
+
+            if (caracter1<=2){
+                document.getElementById('entrada').className = 'vermelho'
+            }else if(caracter1>2){
+                document.getElementById('entrada').className = 'verde'
+            }
+                
+            
+                
+            
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <input
+    id="entrada"
+    type="text"
+    onkeydown="caracter_3()"
+    onfocus="modificaEstiloFoco()"
+    onblur="modificaEstiloSemFoco()" 
+    >
+    
+</body>
+</html>

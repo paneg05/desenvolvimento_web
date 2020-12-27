@@ -4,11 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        function distribuiCaracter(){
+
+            // selecionar o valor digitado
+            var caracter = document.getElementById('entrada').value//atibuto value do metodo get element by id retorna o valor do elemnto selecionado
+            document.getElementById('entrada').value = ''
+
+            //limpar espaços em branco nas estremidades das strings 
+            caracter.trim()
+
+            switch (caracter) {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    //adicionar no campo referente a números
+                    document.getElementById('numeros').value += caracter
+                    break;
+            
+                default:
+                    //adicionar no campo referente a letras
+                    document.getElementById('letras').value += caracter
+                    break;
+            }
+        
+        }
+    </script>
+
 </head>
 <body>
     
+    
+    <input 
+    id="entrada"
+    type="text" 
+    placeholder="digite um caracter aki"
+    onkeyup="distribuiCaracter()">
+    <br>
+    <br>
+    <hr>
+    <span>letras</span>
+    <input
+    type="text"
+    disabled
+    id="letras">
 
-
+    <span>números</span>
+    <input
+    type="text"
+    disabled
+    id="numeros">
 
 
     <script>
