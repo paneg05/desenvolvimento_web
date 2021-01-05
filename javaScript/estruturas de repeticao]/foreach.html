@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var listaFuncionarios = ['viviane','rosangela','miguel','lucas','fernanda']
+
+        listaFuncionarios.forEach(function (valor,indice,array){
+            console.log('indice: ' + indice +' / valor: ' + valor )
+            if(valor=='lucas'){
+                array[indice]='um novo valor'
+            }
+        })
+        
+        console.log(listaFuncionarios)
+
+
+
+
+        var f = function (valor,indice,array){
+            console.log(indice,valor)
+        }
+
+       listaFuncionarios.forEach(f) 
+
+
+    </script>
+
+
+
+</body>
+</html>
