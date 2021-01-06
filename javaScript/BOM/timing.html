@@ -7,7 +7,31 @@
 </head>
 <body>
     <script>
+        //setTimeout(ação,tempo em milisegundos) seta um delay
+        //cleartimeout()
 
+
+        //setInterval(ação,tempo em milisegundos) seta um intervalo de tempo em que uma ação será executada
+        //clearInterval()  
+
+        var i = 5
+
+        //setTimeout(acao,2000)
+        
+
+        x = setInterval(
+            function () {
+                document.write(i+'-')
+                i--
+                if(i==0){
+                    clearInterval(x)
+                }
+                
+            },
+            1000
+        )
+
+        
         
     </script>
 </body>
