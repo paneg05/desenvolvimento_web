@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var video = Array()
+
+        video[1]=Array()
+        video[1]['nome']='fullmetalalchemist'
+        video[1]['categoria']='anime'
+
+
+       
+
+
+        function getVideo(video){
+            try{
+                consle.log(video[0])
+                console.log('a aplicação não morreu!')
+            }catch(e){
+                tratarErro(e)
+                console.log('agora sim podemos tratar esse erro')
+                throw new Error ('houve um erro e estamos trabalhando nisso agora!!')//força uma mensagem de erro customizada
+            } finally{
+                console.log('sempre pasa por aqui try/cath')
+            }
+
+            
+
+        }
+
+        function tratarErro(e){
+            //logica para tratar o erro e enviar para o servidor de desenvolvimento
+        }
+
+
+
+        getVideo(video)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button type="button" onclick="abrirPopUp()">Abrir janela</button>
+    <button type="button" onclick="fecharPopUp()">fechar janela</button>
+    <button type="button" onclick="window.print()">imprimir pagina</button>
+
+    <script>
+
+        var janela
+
+
+        function abrirPopUp(){
+           janela = window.open('https://www.google.com.br/?gws_rd=ssl','nova janela','width=200,height=100')
+        }
+
+        function fecharPopUp(){
+            janela.close()
+        }
+
+
+
+    </script>
+</body>
+</html>
